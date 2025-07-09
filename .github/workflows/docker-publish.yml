@@ -40,6 +40,10 @@ jobs:
 
     - name: Run Vulnerability Scan
       run: |
+         echo "snyk version"
+         snyk --version
+         echo
+         echo "======="
          make vulnerability-scan
 
     - name: Run Container Vulnerability Scan
